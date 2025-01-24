@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Test 1</h1>
+    <h1>Test 2</h1>
+    <h1>Test 3</h1>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="password" />
+
+    <li>
+        <a href="">1</a><a href="">2</a>
+        <p><a href="">3</a></p>
+    </li>
+
+</body>
+
+<script>
+    //DOM - Document Object Model
+    let h1 = document.querySelector('h1');
+    h1.style.color = 'green'
+
+    let h1All = document.querySelectorAll('h1');
+    h1All.forEach(x => {
+        x.style.color = 'red'
+    })
+
+    /*
+      css selector
+        h1              => avalin h1
+        .container      => class="container"
+        #xyz            => id="xyz"
+        [disabled]      => <input type="text" disabled />
+        [type=password] => <input type="password"  />
+        li > a          => 
+        li a
+    */
+
+    document.getElementsByTagName
+    document.getElementsByName
+    document.getElementById
+    document.getElementsByClassName
+
+
+</script>
+
+</html>
