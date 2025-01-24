@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- direct js -->
+    <button onclick="let a=10; confetti(); alert('done')">Click me</button>
+    <button onclick="confetti()">Click me</button>
+    <!-- call function -->
+    <button onclick="btnHandler">Click me NOT</button>
+    <button onclick="btnHandler()">Click me</button>
+
+    <!-- JS only -->
+    <button class="my-button">Click me JS</button>
+</body>
+<script src="
+        https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js
+        "></script>
+
+<script>
+    const btnHandler = () => {
+        let a = 2;
+        confetti();
+    }
+    //:nth-child
+    let btn = document.querySelector('.my-button');
+    btn.addEventListener('click', (e) => {
+        confetti();
+    })
+</script>
+
+</html>
